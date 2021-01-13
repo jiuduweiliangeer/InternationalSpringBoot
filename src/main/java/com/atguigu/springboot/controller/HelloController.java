@@ -9,6 +9,10 @@ import java.util.Map;
 
 @Controller
 public class HelloController {
+    @RequestMapping({"/","/login.html"})
+    public String loginController(){
+        return "login";
+    }
     @ResponseBody
     @RequestMapping("/hello")
     public String helloController(){
